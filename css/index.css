@@ -62,6 +62,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
+    z-index: 2;
 }
 
 
@@ -72,6 +73,7 @@
     text-align: center;
     transform: translateX(-50%);
     display: none;
+    z-index: 3;
 }
 
 .end .over{
@@ -144,4 +146,23 @@
     font-weight: bolder;
     cursor: pointer;
     margin-top: 30px;
+}
+
+.pipe{
+    position: absolute;
+    width: 52px;
+    height: 150px;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+.pipe-up{
+    background-image: url(../image/pipe2.png);
+    background-position-y: bottom ;
+    top: 0;
+}
+
+.pipe-down{
+    bottom: 0;
+    background-image: url(../image/pipe1.png);
 }
