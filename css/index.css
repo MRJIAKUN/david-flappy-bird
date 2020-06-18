@@ -1,0 +1,168 @@
+@import 'reset.css';
+
+#game{
+    position: relative;
+    width: 100%;;
+    height: 600px;
+    background-image: url(../image/sky.png);
+    /* background-position-x: ; */
+}
+
+.player{
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/birds.png);
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    margin-left: -15px;
+    transition: top .3s linear;
+}
+
+.start{
+    position: absolute;
+    left: 50%;
+    top: 295px;
+    margin-left: -100px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bolder;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.start.start-white{
+    color: #fff;
+    font-size: 24px;
+}
+
+.start.start-blue{
+    color: #0099ff;
+    font-size: 36px;
+}
+
+.score{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    color: #fff;
+    font-weight: bolder;
+    transform: translateX(-50%);
+    font-size: 28px;
+    display: none;
+}
+
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 2;
+}
+
+
+.end{
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    text-align: center;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 3;
+}
+
+.end .over{
+    color: red;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.end .result{
+    color: yellow;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.end .final-score{
+    color: yellow;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.end .rank-list{
+    margin-top: 20px;
+    text-align: left;
+    color: #09f;
+}
+
+.end .rank-list .rank-item{
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.end .rank-degree{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #8eb9f5;
+}
+
+
+.end .rank-degree.first{
+    background-color: #f54545;
+}
+
+.end .rank-degree.second{
+    background-color: #ff8547;
+}
+
+.end .rank-degree.third{
+    background-color: #ffac38;
+}
+
+.end .rank-score{
+    display: inline-block;
+    width: 30px;
+    margin-right: 6px;
+}
+
+.end .restart{
+    color: #09f;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.pipe{
+    position: absolute;
+    width: 52px;
+    height: 150px;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+.pipe-up{
+    background-image: url(../image/pipe2.png);
+    background-position-y: bottom ;
+    top: 0;
+}
+
+.pipe-down{
+    bottom: 0;
+    background-image: url(../image/pipe1.png);
+}
